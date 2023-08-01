@@ -8,7 +8,7 @@ import { useRouter } from "next/router"
 import { Separator } from "@/components/Shared"
 import { Seo } from "@/components/Shared"
 
-const accountPage = () => {
+const AccountPage = () => {
 
     const [showTabOrders, setShowTabOrders ] = useState(false)
     const [showTabWishlist, setShowTabWishlist ] = useState(false)
@@ -117,4 +117,4 @@ const accountPage = () => {
   )
 }
 
-export default accountPage
+export default AccountPage
