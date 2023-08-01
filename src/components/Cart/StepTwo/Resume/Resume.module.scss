@@ -1,0 +1,123 @@
+@import '~/src/scss/index.scss';
+
+.resume > h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.block,
+.blockTotal {
+    background-color: $background-quaternary;
+    width: 100%;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .product {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $border-secundary;
+        padding: 10px 0;
+
+        &:last-of-type {
+            border: 0;
+            padding-bottom: 0;
+        }
+
+        >div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            p {
+                font-weight: bold;
+                padding-right: 50px;
+            }
+
+            span {
+                font-size: 10px;
+                color: $text-secondary;
+            }
+        }
+
+        > span {
+            color: $text-secondary;
+            font-size: 12px;
+            white-space: nowrap;
+        }
+    }
+}
+
+.blockTotal {
+    >div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        > span {
+            font-weight: bold;
+
+            &:last-of-type {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.button {
+    cursor: pointer;
+    pointer-events: all;
+    transition-duration: .3s;
+    opacity: 1;
+    width: 100%;
+
+    > button {
+        min-height: 40px;
+    }
+}
+
+.buttonOff {
+    transition-duration: .3s;
+    opacity: .5;
+    cursor: auto;
+    pointer-events: none;
+}
+
+
+.ldsDualRing {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+      }
+      .ldsDualRing:after {
+        content: " ";
+        display: block;
+        width: 10px;
+        height: 10px;
+        margin: 0;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        border-color: #fff transparent #fff transparent;
+        animation: ldsDualRing 1.2s linear infinite;
+      }
+      @keyframes ldsDualRing {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+
+      
+}

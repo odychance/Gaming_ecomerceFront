@@ -1,0 +1,1 @@
+export { BannerLastGamePublished } from './BannerLastGamePublished'

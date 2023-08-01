@@ -1,0 +1,120 @@
+@import "~/src/scss/index.scss";
+
+.tabsMainContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.upTabs {
+    min-width: 800px;
+    border-bottom: 2px solid $background-quaternary;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.tabsLeft, .tabsRight {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.txt {
+    padding: 12px;
+    margin-bottom: -4px;
+
+    font-size: 16px;
+}
+
+.logoutIcon {
+    padding-bottom: 10px;
+    margin-bottom: -20px;
+    margin-left: 10px;
+}
+
+.logoutIcon:hover {
+    border-bottom: 2px solid $primary;
+    padding-bottom: 6px;
+    margin-bottom: -17px;
+}
+
+.txt:hover {
+    color: $primary;
+    border-bottom: 2px solid $primary;
+    padding-bottom: 9px;
+    margin-bottom: -4px;
+}
+
+.settings {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    margin-right: 10px;
+
+    &:hover {
+        border-bottom: 2px solid $primary;
+        padding-bottom: 2px;
+        margin-bottom: -4px;
+    
+        > .settingsIcon {
+            animation-name: spinSettings;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            margin-bottom: -2px;   
+        }
+    }
+
+    > .txt {
+        border-bottom: none;
+        padding-bottom: none;
+        margin-bottom: none;
+    }
+}
+
+@keyframes spinSettings {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.settingsIcon {
+    width: 20px;
+    padding: 0;
+    margin-right: -10px;   
+}
+
+.tabsTxtBottom {
+    display: none;
+}
+
+.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.logoutIcon {
+    width: 25px;
+}
+
+.tabsBottom {
+    padding: 10px 0 0 0;
+    position: relative;
+}
+
+.containerForms {
+    display: flex;
+    margin: 0 -10px;
+    margin-top: 50px;
+}

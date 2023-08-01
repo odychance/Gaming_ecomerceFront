@@ -1,0 +1,46 @@
+@import "~/src/scss/index.scss";
+
+
+.account {
+    display: flex;
+    
+    button {
+        background-color: transparent;
+        border: 1px solid transparent;
+        margin-left: 10px;
+        transition-duration: .3s;
+
+        &:hover {
+            background-color: $primary;
+            border: 1px solid $text-primary;
+
+            > .total {
+                border: 1px solid $text-primary;
+                transition-duration: .3s;
+            }
+        }
+    }
+}
+
+.total {
+    background-color: $primary;
+    font-size: 10px;
+    margin-left: 5px;
+    width: 20px;
+    height: 15px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart, .bell, .user {
+    background-color: transpatent;
+    width: 15px;
+    height: 15px;
+}
+
+.carBtn {
+    width: 900px;
+}

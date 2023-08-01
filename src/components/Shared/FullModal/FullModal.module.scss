@@ -1,0 +1,44 @@
+@import '~/src/scss/index.scss';
+
+.fullModal {
+    opacity: 0;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow:hidden;
+    transition-duration: .3s;
+    display: flex;
+    z-index: 100;
+
+    > .contentModal {
+        background-color: $background-quaternary;
+        width: 100%;
+        pointer-events: none;
+        transform: scale(1.1);
+        transition-duration: .3s;
+        z-index: 101;
+
+        > .btnClose {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            pointer-events: all;
+        }
+    }
+}
+
+.active {
+    opacity: 1;
+    pointer-events: auto;
+
+    > .contentModal {
+        transform: scale(1);
+        pointer-events: all;
+    }
+}

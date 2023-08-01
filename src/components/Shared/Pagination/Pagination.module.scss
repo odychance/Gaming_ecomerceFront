@@ -1,0 +1,27 @@
+@import '~/src/scss/index.scss';
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pageBoxes {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.arrow, .totalPages {
+    width: 40px;
+    padding: 8px;
+    background-color: $background-secundary;
+    border: 1px solid $text-secondary;
+    border-radius: 10px;
+
+    &:hover {
+        border: 1px solid $text-primary;
+        background-color: $background-tertiary;
+    }
+}

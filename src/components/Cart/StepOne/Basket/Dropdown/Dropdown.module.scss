@@ -1,0 +1,11 @@
+@import '~/src/scss/index.scss';
+
+.containerDropdown {
+    > select {
+        background-color: $background-primary;
+        padding: 4px;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 12px;
+    }
+}
