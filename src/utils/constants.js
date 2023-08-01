@@ -1,6 +1,6 @@
 export const ENV = {
-    SERVER_HOST: "oddy-gamingback.up.railway.app",
-    API_URL: "oddy-gamingback.up.railway.app/api",
+    SERVER_HOST: "https://oddy-gamingback.up.railway.app",
+    API_URL: "https://oddy-gamingback.up.railway.app/api",
     ENDPOINTS: {
         AUTH: {
             REGISTER: "auth/local/register",
