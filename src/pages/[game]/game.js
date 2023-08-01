@@ -5,7 +5,7 @@ import { ENV } from '@/utils/constants'
 import { Separator } from '@/components/Shared'
 import { Seo } from '@/components/Shared'
 
-const Game = (props) => {
+const GamePage = (props) => {
     const {game} = props
     const wallpaper = game.attributes.wallpaper
 
@@ -38,4 +38,4 @@ const Game = (props) => {
   )
 }
 
-export default Game
+export default GamePage

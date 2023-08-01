@@ -8,7 +8,7 @@ import { Seo } from "@/components/Shared"
 
 const gameCtrl = new Game()
 
-const Cart = () => {
+const CartPage = () => {
 
   const { query: { step = 1} } = useRouter()
   const currentStep = Number(step)
@@ -50,4 +50,4 @@ const Cart = () => {
   )
 }
 
-export default Cart
+export default CartPage
