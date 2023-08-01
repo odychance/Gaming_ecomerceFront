@@ -7,6 +7,7 @@ import { useAuth } from "@/hooks"
 import { useRouter } from "next/router"
 import { Separator } from "@/components/Shared"
 import { Seo } from "@/components/Shared"
+import Link from "next/link"
 
 const AccountPage = () => {
 
@@ -76,9 +77,9 @@ const AccountPage = () => {
                   <img src="/svg/settings.svg" alt="settingsIcon" className={styles.settingsIcon} />
                   <h3 className={styles.txt} onClick={toggleClassSettings}>Ajustes</h3>
                 </div>
-                <a href="/" onClick={logout}>
+                <Link href="/" onClick={logout}>
                   <img src="/svg/logout.svg" alt="logout" className={styles.logoutIcon} />
-                </a>
+                </Link>
               </div>
 
             </div>
